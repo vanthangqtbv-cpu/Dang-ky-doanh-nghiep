@@ -1,0 +1,89 @@
+{
+  "company": {
+    "company_type": "TNHH_1TV",
+    "name_vn": "CÔNG TY TNHH CÔNG NGHỆ MẪU VIỆT NAM",
+    "name_en": "VIETNAM SAMPLE TECHNOLOGY COMPANY LIMITED",
+    "name_short": "VNSAMPLE TECH CO., LTD",
+    "registry_office": "Phòng Đăng ký kinh doanh – Sở Tài chính Thành phố Hồ Chí Minh",
+    "headquarters": {
+      "full_address": "Số 100 Đường Nguyễn Thị Minh Khai, Phường Xuân Hòa, Thành phố Hồ Chí Minh, Việt Nam",
+      "portal_city_code": "122",
+      "province_name": "Thành phố Hồ Chí Minh",
+      "ward_name": "Phường Xuân Hòa",
+      "street_address": "Số 100 Đường Nguyễn Thị Minh Khai"
+    },
+    "phone": "0901000111",
+    "email": "contact@congtymau.vn",
+    "website": "https://congtymau.vn",
+    "mission_statement": "Cung cấp nền tảng phần mềm quản trị doanh nghiệp, giải pháp chuyển đổi số, điện toán đám mây và ứng dụng công nghệ hiện đại nâng cao năng suất vận hành cho doanh nghiệp tại Việt Nam."
+  },
+  "charter_capital": {
+    "amount_vnd": 2000000000,
+    "amount_formatted": "2.000.000.000",
+    "amount_in_words": "Hai tỷ đồng chẵn",
+    "contribution_deadline_days": 90
+  },
+  "owner_and_legal_rep": {
+    "honorific": "Ông",
+    "full_name": "NGUYỄN VĂN MINH",
+    "gender": "Nam",
+    "dob": "15/06/1990",
+    "ethnicity": "Kinh",
+    "nationality": "Việt Nam",
+    "id_type": "Thẻ căn cước công dân (gắn chip)",
+    "id_number": "079090000123",
+    "id_issue_date": "10/08/2022",
+    "id_expiry_date": "15/06/2030",
+    "id_issue_place": "Cục Cảnh sát Quản lý hành chính về trật tự xã hội",
+    "permanent_address": "Số 25 Đường Lê Lợi, Phường Sài Gòn, Thành phố Hồ Chí Minh, Việt Nam",
+    "contact_address": "Số 100 Đường Nguyễn Thị Minh Khai, Phường Xuân Hòa, Thành phố Hồ Chí Minh, Việt Nam",
+    "contact_portal_city_code": "122",
+    "contact_ward_name": "Phường Xuân Hòa",
+    "contact_street_address": "Số 100 Đường Nguyễn Thị Minh Khai",
+    "phone": "0901000111",
+    "email": "contact@congtymau.vn",
+    "position_title": "Chủ tịch công ty kiêm Tổng Giám đốc",
+    "portal_position_code": "3271",
+    "ownership_percent": "100,00%",
+    "cccd_front_image": "",
+    "cccd_back_image": ""
+  },
+  "business_lines": [
+    {
+      "code": "6219",
+      "name": "Lập trình máy tính khác",
+      "detail": "Chi tiết: Thiết kế cấu trúc, viết mã, tùy chỉnh, thử nghiệm và triển khai phần mềm quản trị doanh nghiệp, ứng dụng di động và hệ thống tự động hóa quy trình nghiệp vụ.",
+      "is_main": true
+    },
+    {
+      "code": "5829",
+      "name": "Xuất bản phần mềm khác",
+      "detail": "Chi tiết: Xuất bản, phân phối và cấp phép bản quyền phần mềm quản trị doanh nghiệp đóng gói sẵn, nền tảng phần mềm dịch vụ SaaS thương mại.",
+      "is_main": false
+    },
+    {
+      "code": "6220",
+      "name": "Tư vấn máy tính và quản lý cơ sở hạ tầng máy tính",
+      "detail": "Chi tiết: Tư vấn kiến trúc chuyển đổi số, thiết kế hệ thống tích hợp phần cứng - phần mềm và quản trị hệ thống công nghệ thông tin cho doanh nghiệp.",
+      "is_main": false
+    },
+    {
+      "code": "6310",
+      "name": "Cơ sở hạ tầng công nghệ thông tin, xử lý dữ liệu, lưu trữ và các hoạt động liên quan",
+      "detail": "Chi tiết: Cung cấp hạ tầng điện toán đám mây, xử lý dữ liệu và lưu trữ ứng dụng doanh nghiệp.",
+      "is_main": false
+    },
+    {
+      "code": "7020",
+      "name": "Hoạt động tư vấn quản lý kinh doanh và hoạt động tư vấn quản lý khác",
+      "detail": "Chi tiết: Tư vấn chiến lược tái cấu trúc vận hành doanh nghiệp và tối ưu hóa quy trình quản trị hiện đại (không bao gồm tư vấn pháp luật, kế toán, kiểm toán).",
+      "is_main": false
+    }
+  ],
+  "tax_and_labor": {
+    "vat_method": "Khấu trừ",
+    "labor_count": 5,
+    "social_insurance_cycle": "Hằng tháng",
+    "doc_location_date": "TP. Hồ Chí Minh, ngày 01 tháng 12 năm 2026"
+  }
+}

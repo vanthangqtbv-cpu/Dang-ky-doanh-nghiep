@@ -1,0 +1,33 @@
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build & source artifacts (never commit uncompiled sources or keys)
+build/
+dist/
+*.egg-info/
+*.pyx
+*.pxd
+*.c
+*.h
+*.o
+*.pem
+*.key
+
+# User workspace outputs & local configs
+output/
+output_*/
+ho_so_*/
+*.local.json
+company_profile.json
+
+# OS files
+.DS_Store
+Thumbs.db
