@@ -33,19 +33,30 @@ Phần mềm áp dụng cơ chế định danh phần cứng (`HWID`) cho phép 
 | **Gói Lẻ (Pay-per-use)** | **59.000 VNĐ / lần** | Cấp thêm **01 lượt** lập & nộp hồ sơ đăng ký doanh nghiệp chính thức từ lần thứ 4 trở đi (phù hợp cá nhân tự thành lập công ty). |
 | **Gói Tháng Không Giới Hạn (Pro / Agency)** | **899.000 VNĐ / tháng** | **Không giới hạn số lượng hồ sơ doanh nghiệp trong 30 ngày** trên thiết bị đã kích hoạt (phù hợp công ty luật, đại lý thuế, dịch vụ kế toán). |
 
+- **Hotline / Zalo Cấp Key & Hỗ trợ Kỹ thuật 24/7:** **`0889 666 635` (AIVANTA)** — Gửi mã `HWID` của máy qua Zalo để nhận mã kích hoạt chữ ký số `Ed25519` trong 30 giây.
+
 ---
 
 ## 3. Yêu cầu hệ thống & Cài đặt
 
+### Cách 1: Cài đặt 1-Chạm qua AI Agent (Google Antigravity / Claude Code / Cursor) — *Khuyên dùng*
+Kho mã nguồn đã tích hợp sẵn tệp chỉ dẫn chuẩn **[`SKILL.md`](./SKILL.md)**. Bạn không cần tự gõ lệnh Terminal hay tự sửa tệp JSON — chỉ cần dán câu lệnh sau vào khung chat của AI Agent:
+
+> *"Tải repo `https://github.com/vanthangqtbv-cpu/Dang-ky-doanh-nghiep`, đọc file `SKILL.md` và hướng dẫn tôi lập bộ hồ sơ đăng ký doanh nghiệp mới."*
+
+AI Agent sẽ tự động cài đặt môi trường, hỏi thông tin doanh nghiệp bằng tiếng Việt, chuẩn hóa mã ngành theo QĐ 36/2025/QĐ-TTg và xuất trọn bộ 04 tệp hồ sơ `.docx` & `.pdf` cho bạn.
+
+### Cách 2: Cài đặt thủ công qua Terminal
 - **Hệ điều hành & Runtime:** macOS (Apple Silicon `arm64`), Python `3.14`.
 - **Thư viện phụ thuộc:** `cryptography`, `python-docx`, `weasyprint`, `Pillow`, `websockets`.
 
 ```bash
-# 1. Di chuyển vào thư mục phần mềm sau khi tải về
+# 1. Tải kho mã nguồn và di chuyển vào thư mục phần mềm
+git clone https://github.com/vanthangqtbv-cpu/Dang-ky-doanh-nghiep.git
 cd Dang-ky-doanh-nghiep
 
 # 2. Khởi tạo môi trường ảo Python 3.14 và cài đặt thư viện
-python3 -m venv .venv
+python3.14 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 ```
 
@@ -87,7 +98,7 @@ python3 dkdn.py autopilot --config ho_so_cong_ty.json --cdp http://127.0.0.1:922
 ```
 
 ### Bước 5: Kích hoạt bản quyền (từ lần sử dụng thứ 4)
-Khi hết 03 lượt miễn phí đầu tiên, sao chép mã `HWID` hiển thị trên màn hình để nhận mã kích hoạt chữ ký số Ed25519 (`Gói Lẻ 59.000đ/lần` hoặc `Gói Tháng 899.000đ/tháng`) và chạy lệnh:
+Khi hết 03 lượt miễn phí đầu tiên, sao chép mã `HWID` hiển thị trên màn hình và gửi qua **Zalo / Hotline: `0889 666 635` (AIVANTA)** để nhận mã kích hoạt chữ ký số `Ed25519` (`Gói Lẻ 59.000đ/lần` hoặc `Gói Tháng 899.000đ/tháng`), sau đó chạy lệnh:
 ```bash
 python3 dkdn.py activate --key DKDN1.<PAYLOAD>.<SIGNATURE>
 ```
